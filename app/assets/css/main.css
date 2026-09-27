@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+html {
+  font-family: "Cal Sans", sans-serif;
+}
