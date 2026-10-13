@@ -12,9 +12,9 @@ const { data: kirbyOtd } = await useFetch<KirbyOTDResponse>(KIRBYOTD_API)
   <div
     class="kirbyotd-container p-4 flex flex-col items-center justify-center h-screen gap-2"
   >
-    <img :src="kirbyOtd?.img" />
-    <div class="bg-white py-1 px-2 rounded-full shadow-lg">
-      <span class="text-pink-gradient text-sm">
+    <img class="max-h-24" :src="kirbyOtd?.img" />
+    <div class="bg-white py-0.25 px-2 rounded-full shadow-lg">
+      <span class="text-pink-gradient text-xs">
         {{ kirbyOtd?.ability.toLocaleLowerCase() }} kirby!
       </span>
     </div>
